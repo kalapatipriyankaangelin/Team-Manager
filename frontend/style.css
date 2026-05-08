@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    color: #fff;
+}
+
+/* ---------------- LOGIN PAGE ---------------- */
+
+.login-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-box {
+    background: rgba(255, 255, 255, 0.08);
+    padding: 40px;
+    width: 350px;
+    border-radius: 16px;
+    backdrop-filter: blur(12px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+    text-align: center;
+}
+
+.login-box h1 {
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.login-box p {
+    color: #cbd5e1;
+    font-size: 14px;
+}
+
+.login-box input {
+    width: 90%;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    background: rgba(255,255,255,0.1);
+    color: white;
+}
+
+.login-box button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(90deg, #3b82f6, #06b6d4);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.login-box button:hover {
+    transform: scale(1.05);
+}
+
+/* ---------------- DASHBOARD ---------------- */
+
+.dashboard {
+    padding: 30px;
+}
+
+.dashboard h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 28px;
+}
+
+/* STATS CARDS */
+.stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: rgba(255,255,255,0.08);
+    padding: 20px;
+    border-radius: 14px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h3 {
+    font-size: 14px;
+    color: #94a3b8;
+}
+
+.card p {
+    font-size: 26px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* ---------------- TASK FORM ---------------- */
+
+.task-form {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.task-form h2 {
+    margin-bottom: 15px;
+}
+
+.task-form input {
+    padding: 12px;
+    margin: 8px;
+    width: 220px;
+    border: none;
+    border-radius: 10px;
+    background: rgba(255,255,255,0.1);
+    color: white;
+    outline: none;
+}
+
+.task-form button {
+    padding: 12px 25px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(90deg, #22c55e, #16a34a);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.task-form button:hover {
+    transform: scale(1.05);
+}
+
+/* MESSAGE TEXT */
+#msg {
+    color: #f87171;
+    font-size: 13px;
+}
